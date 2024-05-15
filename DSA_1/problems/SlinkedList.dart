@@ -4,8 +4,8 @@ class Node {
   Node(this.data);
 }
 class SLinkedList {
-  Node? head = null;
-  Node? tail = null;
+  Node? head;
+  Node? tail;
   void addNode(int data) {
     Node newNode = Node(data);
     if (head == null) {

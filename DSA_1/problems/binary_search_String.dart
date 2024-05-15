@@ -6,7 +6,6 @@ int binarySearch(List<String> arr, String target) {
   while (low <= high) {
     int mid = (low + high) ~/ 2;
     int comparison = arr[mid].compareTo(target);
-
     if (comparison == 0) {
       return mid; // Element found
     } else if (comparison < 0) {
