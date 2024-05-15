@@ -299,7 +299,7 @@ Program:-
 
                                     MOMORY LEAK
                                 ================== 
-  Q. What is memory Leak?
+  Q. What is memory Leak? 
       Memory leak occurs when programers creat a memory and forget to use it
       or to delete it. The result of memory leak is that, it reduces the 
       performance of the system by reducing the amount of available memory.
@@ -330,7 +330,7 @@ Program:-
     Q. what is time Complexity?
           time Complexity is the amount of time required to complate a task.
 
-    Q. What is Asymptotic Analysis? 
+    Q. What is Asymptotic Analysis?
           Asymptotic notation is a way to describe the running time or space 
           complexity of an algorithm based on the input size.
 
@@ -349,6 +349,28 @@ Program:-
           iii) Θ - big theta Notation
           iV) o - little Oh Notation
           v) w - Little omega Notation
+      
+    Complexity of commen operations of all data structure.
+      1) Arrays                       2) Linked List
+         * access    : O(1)               * access    : O(n)
+         * search    : O(n)               * access    : O(n)
+         * insertion : O(n)               * insertion : O(1)
+         * Deletion  : O(n)               * Deletion  : O(1)
+      
+      3) Stack                        4) Queues
+         * push : O(1)                    * Enqueue : O(1)  
+         * pop  : O(1)                    * Dequeue : O(1)  
+         * peek : O(1)                    * peek    : O(1)
+      
+      5) Hash Table                   6) Trees
+         * search    : O(1)               * search    : O(log n)  
+         * insertion : O(1)               * insertion : O(log n)  
+         * Deletion  : O(1)               * Deletion  : O(log n) 
+         
+      7) Heap
+         * insertion : O(log n) 
+         * deletion  : O(log n) 
+         * peek      : O(1) 
   ===========================================================================
                                     LINKED LIST
                             ==========================
@@ -412,7 +434,7 @@ Program:-
       The process in which a function calls itself directly or indirectly is 
       called recursion and the corresponding function is called a recursive 
       function. Using a recursive algorithm, certain problems can be solved 
-      quite easily.
+      quite easily. 
   
   Q. what are the advantages and Disadvantages of recursion?
 
@@ -434,8 +456,11 @@ Program:-
        iterative solutions.
    iv) Recursion can lead to stack overflow errors if the recursion depth is 
        too high.
+
+
+
     
-    
+
     
 
 
