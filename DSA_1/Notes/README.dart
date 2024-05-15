@@ -396,7 +396,7 @@ Program:-
         2) Doubly Linked List
         3) Circular Linked List
         4) Doubly Circular Linked List
-        5) Hearer Linked List
+        5) Header Linked List
     
     --> Singly Linked List:
                   in Singly Linked List Navigation is forward only.
