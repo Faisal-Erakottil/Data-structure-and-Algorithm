@@ -61,8 +61,6 @@ void main(List<String> args) {
   list.addNode(10);
   list.addNode(20);
   list.addNode(50);
-
   list.delete(20);
-
   list.display();
 }

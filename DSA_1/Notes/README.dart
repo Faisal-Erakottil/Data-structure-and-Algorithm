@@ -314,6 +314,14 @@ Program:-
           # External Libraries:
                 Bugs or limitations in external libraries failing to 
                 release memory.
+
+  Q. what is garbage collector?
+
+      The garbage collector in Dart is a crucial feature for automatic memory 
+      management.  In essence, it frees up memory that's no longer being used 
+      by your program. This helps to prevent memory leaks and improves the 
+      overall performance and stability of our Dart applications.
+
     ========================================================================
                                  COMPLEXITY ANALYSIS
                         ====================================  
