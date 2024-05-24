@@ -9,6 +9,7 @@ class Node {
 class SLinkedList {
   Node? head = null;
   Node? tail = null;
+  
   void addNode(int data) {
     Node newNode = Node(data);
     if (head == null) {

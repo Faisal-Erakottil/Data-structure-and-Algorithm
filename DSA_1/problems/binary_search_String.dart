@@ -22,6 +22,6 @@ void main() {
   String name ="David";
   int index = binarySearch(names, name);
   if (index != -1) {
-    print("$name found at index $index");
+    print("$name found at index $index position");
   } 
 } 

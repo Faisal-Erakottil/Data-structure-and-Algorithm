@@ -418,83 +418,150 @@
 // }
 //=============================
 // Linked List
-class Node {
-  int? data;
-  Node? next;
-  Node(this.data);
-}
+// class Node {
+//   int? data;
+//   Node? next;
+//   Node(this.data);
+// }
 
-class SLlist {
-  Node? head;
-  Node? tail;
-  void addNode(int data) {
-    Node? newNode = Node(data);
-    if (head == null) {
-      head = newNode;
-    } else {
-      tail?.next = newNode;
-    }
-    tail = newNode;
-  }
+// class SLlist {
+//   Node? head;
+//   Node? tail;
+//   void addNode(int data) {
+//     Node? newNode = Node(data);
+//     if (head == null) {
+//       head = newNode;
+//     } else {
+//       tail?.next = newNode;
+//     }
+//     tail = newNode;
+//   }
 
-  removehead() {
-    head = head?.next;
-  }
+//   removehead() {
+//     head = head?.next;
+//   }
 
-  removetail() {
-    Node? temp = head;
-    while (temp?.next != tail) {
-      temp = temp?.next;
-    }
-    tail = temp;
-    temp?.next = null;
-  }
+//   removetail() {
+//     Node? temp = head;
+//     while (temp?.next != tail) {
+//       temp = temp?.next;
+//     }
+//     tail = temp;
+//     temp?.next = null;
+//   }
 
-  removeafter(int data) {
-    Node? temp = head;
-    Node? prev;
-    if (temp != null && temp.data == data) {
-      head = temp.next;
-      if (head == null) {
-        tail = null;
-      }
-      return;
-    }
-    while (temp != null && temp.data != data) {
-      prev = temp;
-      temp = temp.next;
-    }
-    if (temp == null) {
-      return;
-    }
-    if (temp == tail) {
-      tail = prev;
-      tail?.next = null;
-    }
-    prev?.next = temp.next;
-  }
+//   removeafter(int data) {
+//     Node? temp = head;
+//     Node? prev;
+//     if (temp != null && temp.data == data) {
+//       head = temp.next;
+//       if (head == null) {
+//         tail = null;
+//       }
+//       return;
+//     }
+//     while (temp != null && temp.data != data) {
+//       prev = temp;
+//       temp = temp.next;
+//     }
+//     if (temp == null) {
+//       return;
+//     }
+//     if (temp == tail) {
+//       tail = prev;
+//       tail?.next = null;
+//     }
+//     prev?.next = temp.next;
+//   }
 
-  display() {
-    if (head == null) {
-      print("empty");
-    }
-    Node? temp = head;
-    while (temp != null) {
-      print(temp.data);
-      temp = temp.next;
-    }
+//   display() {
+//     if (head == null) {
+//       print("empty");
+//     }
+//     Node? temp = head;
+//     while (temp != null) {
+//       print(temp.data);
+//       temp = temp.next;
+//     }
+//   }
+// }
+
+// void main() {
+//   SLlist a = SLlist();
+//   a.addNode(10000);
+//   a.addNode(1000);
+//   a.addNode(100);
+//   a.addNode(10);
+//   a.addNode(1);
+//   a.removehead();
+//   a.removetail();
+//   //a.removeafter(1000);
+//   a.display();
+// }
+
+//=======================================
+//recursion program of factorial
+
+// void main() {
+//   int data = 5;
+//   int result = factorial(data);
+//   print("factorial of $data is $result");
+// }
+
+// int factorial(int n) {
+//   if (n == 1) {
+//     return 1;
+//   }
+//   return n * factorial(n - 1);
+// }
+//========================
+// fibonacci seriees using recursion
+// int fibonacci(int n) {
+//   if (n <= 1) {
+//     return n;
+//   } else {
+//     return fibonacci(n - 1) + fibonacci(n - 2);
+//   }
+// }
+
+// void main() {
+//   int n = 11;
+//   print("Fibonacci series up to $n terms:");
+//   for (int i = 0; i < n; i++) {
+//     print(fibonacci(i));
+//   }
+// }
+
+//===============================
+// int fibonacci(int n) {
+//   if (n <= 1) {
+//     return n;
+//   } else {
+//     return fibonacci(n - 1) + fibonacci(n - 2);
+//   }
+// }
+
+// void main() {
+//   int n = 10;
+//   int result = fibonacci(n);
+//   for (int i = 1; i < n;i++) {
+//     print(fibonacci(i));
+//   }
+// }
+//=================================
+
+int factorial(int n) {
+  if (n == 1) {
+    return 1;
+  } else {
+    return n * factorial(n - 1);
   }
 }
 
 void main() {
-  SLlist a = SLlist();
-  a.addNode(10000);
-  a.addNode(1000);
-  a.addNode(100);
-  a.addNode(10);
-  a.addNode(1);
-  a.removehead();
-  a.removetail();
-  //a.removeafter(1000);
-  a.display();
+  int n = 10;
+  int result = factorial(n);
+  print("factorial of $n is $result");
 }
+
+//===================================

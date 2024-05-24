@@ -10,18 +10,19 @@ class DLinkedList {
   Node? head;
   Node? tail;
 
-  void addNode(int data) {
+  addNode(int data) {
     Node newNode = Node(data);
 
     if (head == null) {
       head = newNode;
     } else {
-      tail!.next = newNode;
+      tail?.next = newNode;
       newNode.prev = tail;
     }
 
     tail = newNode;
   }
+
 
 //forward
   void display() {
@@ -48,7 +49,6 @@ void main() {
   list.addNode(2);
   list.addNode(3);
   list.addNode(4);
-
   list.display();
   list.displayRevers();
 }

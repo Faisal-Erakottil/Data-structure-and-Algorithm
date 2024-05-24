@@ -10,7 +10,7 @@
                         | Non primitive Data Structure |
                          ==============================
                                        ||
-                ==================================================
+              =====================================================
               ||                                                  ||
           =============                                   =================
           | Linear DS |                                   | Non Linear DS |
@@ -218,7 +218,7 @@ Linear DataStructure:-
                               ====================
   Q. What is an Algorithm ?
       An algoritham is a step by step procedures for Solving a problem or 
-      performing a task. 
+      performing a task.
 
       # Step by step instructions:
           An algorithm gives clear,step by step instructions for how to solve
@@ -254,7 +254,6 @@ Linear DataStructure:-
   
 Example :- 
 Algoritham of a program to print zero to n numbers.
-
 step 1:- Start
 step 2:- read the value of n from the user.
 step 3:- set the value of i to 0.
@@ -316,7 +315,6 @@ Program:-
                 release memory.
 
   Q. what is garbage collector?
-
       The garbage collector in Dart is a crucial feature for automatic memory 
       management.  In essence, it frees up memory that's no longer being used 
       by your program. This helps to prevent memory leaks and improves the 
@@ -361,11 +359,11 @@ Program:-
     Complexity of commen operations of all data structure.
       1) Arrays                       2) Linked List
          * access    : O(1)               * access    : O(n)
-         * search    : O(n)               * access    : O(n)
+         * search    : O(n)               * search    : O(n)
          * insertion : O(n)               * insertion : O(1)
          * Deletion  : O(n)               * Deletion  : O(1)
       
-      3) Stack                        4) Queues
+      3) Stack                        4) Queue
          * push : O(1)                    * Enqueue : O(1)  
          * pop  : O(1)                    * Dequeue : O(1)  
          * peek : O(1)                    * peek    : O(1)
@@ -466,8 +464,7 @@ Program:-
        iterative solutions.
    iv) Recursion can lead to stack overflow errors if the recursion depth is 
        too high.
-
-
   ===========================================================================
 */
+
 
