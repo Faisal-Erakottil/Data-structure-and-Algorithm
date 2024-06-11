@@ -14,7 +14,7 @@
 // }
 
 // void main() {
-//   List<int> arr = [64, 34, 25, 12, 22, 11, 90];
+//   List<int> arr = [10, 5, 8, 20, 18];
 //   print("Original array:");
 //   print(arr);
 //   selectionSort(arr);
@@ -153,6 +153,31 @@
 //   print(arr);
 //   selection(arr);
 //   print("Sorted List");
+//   print(arr);
+// }
+//===============================================
+
+// void selection(List<int> arr) {
+//   int n = arr.length;
+//   for (int i = 0; i < n - 1; i++) {
+//     int low = i;
+//     for (int j = i + 1; j < n; j++) {
+//       if (arr[j] < arr[low]) {
+//         low = j;
+//       }
+//     }
+//     int swap = arr[low];
+//     arr[low] = arr[i];
+//     arr[i] = swap;
+//   }
+// }
+
+// void main() {
+//   List<int> arr = [30, 10, 20, 5, 15, 25];
+//   print("orginal array is:");
+//   print(arr);
+//   selection(arr);
+//   print("sorted array is :");
 //   print(arr);
 // }
 //===============================================

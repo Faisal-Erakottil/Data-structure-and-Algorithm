@@ -85,75 +85,25 @@
 //   print("Med value : $median");
 // }
 //================================================
-// Insertion sort.
+//insertion sort
+void insertion(List<int> arr) {
+  int n = arr.length;
+  for (int i = 1; i < n; i++) {
+    int key = arr[i];
+    int j = i - 1;
+    while (j >= 0 && arr[j] > key) {
+      arr[j + 1] = arr[j];
+      j--;
+    }
+    arr[j + 1] = key;
+  }
+}
 
-// import 'quick_sort.dart';
-
-// void swap(List<int> arr, i, j) {
-//   int temp = arr[i];
-//   arr[i] = arr[j];
-//   arr[j] = temp;
-// }
-
-// divide(List<int> arr, low, heigh) {
-//   int pivot = arr[heigh];
-//   int i = low - 1;
-
-//   for (int j = low; j < heigh; j++) {
-//     if (arr[j] < pivot) {
-//       i++;
-//       swap(arr, i, j);
-//     }
-//   }
-//   swap(arr, i + 1, heigh);
-//   return i + 1;
-// }
-
-// void quickSort(List<int> arr, low, high) {
-//   if (low < high) {
-//     int pi = partition(arr, low, high);
-//     quickSort(arr, low, pi - 1);
-//     quickSort(arr, pi + 1, high);
-//   }
-// }
-
-// void main() {
-//   List<int> arr = [10, 7, 8, 9, 1, 5];
-//   int n = arr.length;
-//   quickSort(arr, 0, n - 1);
-//   print("Sorted Array");
-//   print(arr);
-// }
-
-//============================================
-
-// swap(List<int> a, i, j) {
-//   int temp = a[i];
-//   a[i] = a[j];
-//   a[j] = temp;
-// }
-
-// partition(List<int> a, lower, uper) {
-//   int pivot = a[lower];
-//   int start = lower, end = uper;
-//   while (a[start] <= pivot) {
-//     start++;
-//   }
-//   if (start < end) {
-//     while (a[end] > pivot) {
-//       end--;
-//     }
-//     if (start < end) {
-//       swap(a,a[start], a[end]);
-//     }
-//   }
-//   swap(a,a[lower], a[end]);
-//   return end; 
-// }
-
-// void main() {
-//   List<int> a = [10, 5, 9, 1, 15];
-//   int uper = a.last;
-//   int lower = a.first;
-//   partition(a, lower, uper);
-// }
+void main() {
+  List<int> arr = [10, 60, 20, 5, 2, 7, 55];
+  print("Given List is :");
+  print(arr);
+  insertion(arr);
+  print("Sorted array is :");
+  print(arr);
+}

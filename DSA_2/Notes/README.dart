@@ -3,7 +3,7 @@
 Q. What is sorting?
     Sorting is a methord to arange an elements of an array in a particular 
     order either assanding or desending.
-
+===============================================================================
 Q. What is Buble sorting ?
 
     Bubble sort is a simple sorting algorithm that works by repeatedly iterating 
@@ -26,6 +26,21 @@ Q. What is Buble sorting ?
                             if array[j] > array[j+1]
                             swap (array[j],array[j+1])
 
+  # Advantages:
+    * Bubble sort is easy to understand and implement.
+    * It does not require any additional memory space.
+    * It is a stable sorting algorithm, meaning that elements with the same
+        key value maintain their relative order in the sorted output.    
+  
+  # Disadvantages:
+    * Bubble sort has a time complexity of O(N2) which makes it very slow for 
+      large data sets.
+    * Bubble sort is a comparison-based sorting algorithm, which means that it 
+      requires a comparison operator to determine the relative order of 
+      elements in the input data set. It can limit the efficiency of the 
+      algorithm in certain cases.
+      
+===============================================================================
 Q. What is selection sort?
     Selection sort , arrange N elements of array by placing the smalest item in
     proper position in case of assending order arrangement.
@@ -44,22 +59,45 @@ Q. What is selection sort?
     ~~~~~~~~~~
         time : O(n*n)
         space : O(1)
+    
+  # Advantages of Selection Sort Algorithm
+      * Simple and easy to understand.
+      * Works well with small datasets.
+    
+  # Disadvantages of the Selection Sort Algorithm
+      * Selection sort has a time complexity of O(n^2) in the worst and 
+          average case.
+      * Does not work well on large datasets.
+      * Does not preserve the relative order of items with equal keys 
+          which means it is not stable.
 
+===============================================================================
 Q. what is Insertion Sort?
     Insertion sort is a simple sorting algorithm that works by iteratively 
     inserting each element of an unsorted list into its correct position in a 
     sorted portion of the list.
 
-    complaxity 
-    ~~~~~~~~~~
-          time : O(n*n)
+    complaxity :
+          time  : O(n*n)
           space : O(1)
+    
+  # Advantages:
+    * Simple and easy to implement.
+    * Stable sorting algorithm.
+    * Efficient for small lists and nearly sorted lists.
+    * Space-efficient.
+
+  # Disadvantages:
+    * Inefficient for large lists.
+    * Not as efficient as other sorting algorithms 
+        (e.g., merge sort, quick sort) for most cases.
   
+
     * work from left to right.
     * examine each item and compare it to items on its left.
     * Insert the item in the correct position in the array.
 
-//==========================================================
+==============================================================================
 
 Q. what is quick sort ?
     Quick sort is a fast and efficient sorting algorithm that works by dividing
@@ -70,13 +108,15 @@ Q. what is quick sort ?
     what is the complaxity of quick sort.
         time: O(n^2) waste case
               O(n log n) best case
+
+  ============================================================================
     
   Q. What is mearge sort?
       Merge sort is a sorting algorithm that follows the divide-and-conquer
       approach. This algoritham split the array in to two groups and sort each
       group recrasivly then mearge them in to form a sorted final array.
 
-    
+  ============================================================================  
 
         
 
