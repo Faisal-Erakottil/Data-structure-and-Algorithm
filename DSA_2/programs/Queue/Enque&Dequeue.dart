@@ -1,17 +1,14 @@
 class Node {
   int data;
   Node? next;
-
   Node(this.data);
 }
-
 class Queue {
   Node? front;
   Node? rear;
-//======================== enqueue   jnkjnnn nnmb lmnopqrstuvwxyz
+//======================== enqueue 
   void enqueue(int data) {
     Node newNode = Node(data);
-
     if (rear == null) {
       front = rear = newNode;
       return;
@@ -34,12 +31,10 @@ class Queue {
 //======================= Display
   void display() {
     Node? current = front;
-
     if (front == null) {
       print("List is empty");
       return;
     }
-
     while (current != null) {
       print("${current.data} ");
       current = current.next;
@@ -53,7 +48,6 @@ void main() {
   queue.enqueue(2);
   queue.enqueue(3);
   queue.enqueue(4);
-  
   queue.dequeue();
   queue.display();
 }

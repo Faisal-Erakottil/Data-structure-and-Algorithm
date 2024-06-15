@@ -3,6 +3,11 @@
 Q. What is sorting?
     Sorting is a methord to arange an elements of an array in a particular 
     order either assanding or desending.
+
+Q. what is inplace Sorting?
+    sorting algorithm that sorts the input array in place, without using any 
+    additional memory is known as inplace sorting.
+
 ===============================================================================
 Q. What is Buble sorting ?
 
@@ -108,18 +113,113 @@ Q. what is quick sort ?
     what is the complaxity of quick sort.
         time: O(n^2) waste case
               O(n log n) best case
+    
+
 
   ============================================================================
-    
   Q. What is mearge sort?
       Merge sort is a sorting algorithm that follows the divide-and-conquer
       approach. This algoritham split the array in to two groups and sort each
       group recrasivly then mearge them in to form a sorted final array.
 
-  ============================================================================  
 
-        
 
+  ================================== STACK ===================================  
+  Q. what is Stack ?
+      A Stack is a linear data structure that follows a particular order in 
+      which the operations are performed. The order may be LIFO
+      (Last In First Out). LIFO implies that the element that is inserted last,
+      comes out first and FILO implies that the element that is inserted first,
+      comes out last.
+
+  Key Operations on Stack Data Structures. 
+      * Push: Adds an element to the top of the stack.
+      * Pop: Removes the top element from the stack.
+      * Peek: Returns the top element without removing it.
+      * IsEmpty: Checks if the stack is empty.
+      * IsFull: Checks if the stack is full (in case of fixed-size arrays).
+  
+  Applications of Stack Data Structures
+      * Recursion
+      * Expression Evaluation and Parsing
+      * Undo/Redo Operations
+      * Browser History
+      * Function Calls
+  
+  Q. what is stack overflow and underflow?
+      Stack overflow
+      ~~~~~~~~~~~~~~
+      Overflow happens when we try to push more items on a stack than it 
+      can hold.
+
+      Stack underflow
+      ~~~~~~~~~~~~~~~
+      Underflow happens when we try to pop an item from an empty stack.
+
+  Q. what is stack pointer?
+      The stack pointer is the pointer that points to the top of the stack.
+      It will always point to the stack frame of the function currently being 
+      executed.
+
+  Q. what is Stack frame?
+      Stack Frame is actually a buffer memory that is an element of the program 
+      stack and has data of the called function, i.e.:
+        * Return Address
+        * Input Parameter
+        * Local Variables
+        * Register Savings
+
+================================ QUEUE ======================================= 
+  Q. what is Queue in data structure?
+      A Queue Data Structure is a fundamental concept in computer science used
+      for storing and managing data in a specific order. It follows the 
+      principle of “First in, First out” (FIFO), where the first element added 
+      to the queue is the first one to be removed.
+
+    Basic Operations of Queue Data Structure
+      * Enqueue (Insert): Adds an element to the rear of the queue.
+      * Dequeue: Removes and returns the element from the front of the queue.
+      * Peek: Returns the element at the front of the queue without removing it.
+      * Empty: Checks if the queue is empty.
+      * Full: Checks if the queue is full.
+
+    Applications of Queue
+      * Task scheduling in operating systems.
+      * Data transfer in network communication.
+      * Simulation of real-world systems. (e.g., waiting lines)
+      * Priority queues for event processing queues for event processing.
+
+  Q. what is double ended Queue?
+      Double ended Queue is a linear data structure that allows elements to be
+      added or removed from both ends with more flexibility compared to queues
+      or stacks.This data structure supports both FIFO (First In, First Out) 
+      and LIFO (Last In, First Out) operations, making it very versatile.
+  
+  Q. which are the Different types of Queue, and explain it?
+      1- Circular Queue
+         ~~~~~~~~~~~~~~
+          type of queue in which the last position is connected back to the 
+          first position to form a circle. 
+
+      2- Priority Queue
+         ~~~~~~~~~~~~~~
+          
+      3- Double-Ended Queue
+      4- Input-Restricted Deque
+      5- Output-Restricted Deque
+      6- Priority Deque
+      7- Concurrent Queue
+      8- Multiple Queue
+      9- Deque
+
+
+
+      
+  ===========================================================================
+  Q. what is hash-map?
+      Hash maps are a common data structure used to store key-value pairs for 
+      efficient retrieval. A value stored in a hash map is retrieved using the 
+      key under which it was stored.
   
 
 
