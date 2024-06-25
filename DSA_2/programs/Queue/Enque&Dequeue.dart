@@ -3,10 +3,11 @@ class Node {
   Node? next;
   Node(this.data);
 }
+
 class Queue {
   Node? front;
   Node? rear;
-//======================== enqueue 
+//======================== enqueue
   void enqueue(int data) {
     Node newNode = Node(data);
     if (rear == null) {
@@ -28,6 +29,7 @@ class Queue {
       rear = null;
     }
   }
+
 //======================= Display
   void display() {
     Node? current = front;

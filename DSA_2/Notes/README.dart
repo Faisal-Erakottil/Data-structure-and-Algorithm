@@ -8,6 +8,29 @@ Q. what is inplace Sorting?
     sorting algorithm that sorts the input array in place, without using any 
     additional memory is known as inplace sorting.
 
+Q. What is stable sorting?
+    This refers to a property of certain sorting algoritham where two elements 
+    are equal, their order in the sorted output is the same as their order in 
+    the input.
+
+    Example of stable sorting Algoritham:
+      1. Merge sort :- It divides the array into halves, recursively sorts 
+              them, and then merges them back together, ensuring stability.
+      
+      2. Bubble Sort:- Repeatedly swaps adjacent elements if they are in the 
+              wrong order, maintaining the relative order of equal elements.
+      
+      3. insertion Sort:- Builds the sorted array one element at a time by
+            repeatedly inserting the next element in its correct position, 
+            preserving order of equal elements.
+
+    Examples of Unstable Sorting Algorithms:
+      1. Quick Sort:- Generally, it does not guarantee the preservation of the
+            relative order of equal elements.
+
+      2. Heap Sort:- Often does not maintain the relative order of equal 
+            elements due to the nature of the heap data structure.
+
 ===============================================================================
 Q. What is Buble sorting ?
 
@@ -16,8 +39,8 @@ Q. What is Buble sorting ?
     Bubble sort arrange N elements of array by placing the biggest element on 
     proper position.
     
-    for this process it uses an Array and it dusent creat any other space for 
-    sorting so the buble sorting is done using inspace Array.
+    for this process it uses an Array and it not creating any other space for 
+    sorting so the buble sorting is done using inspace sorting.
 
     complaxity 
     ~~~~~~~~~~
@@ -27,7 +50,7 @@ Q. What is Buble sorting ?
     sudo-code for understanding Buble sort
 
                         for i from 1 to N elements
-                          for j from 1 to N elements
+                          for j from 1 to N -1 elements
                             if array[j] > array[j+1]
                             swap (array[j],array[j+1])
 
@@ -47,8 +70,16 @@ Q. What is Buble sorting ?
       
 ===============================================================================
 Q. What is selection sort?
-    Selection sort , arrange N elements of array by placing the smalest item in
-    proper position in case of assending order arrangement.
+   
+    Selection Sort is an in-place comparison-based sorting algorithm. It works
+    by dividing the list into two parts: the sorted part at the beginning and
+    the unsorted part at the end. Initially, the sorted part is empty, and the
+    unsorted part is the entire list. The algorithm proceeds by finding the 
+    smallest (or largest, depending on the sorting order) element from the 
+    unsorted part and swapping it with the first element of the unsorted part,
+    effectively growing the sorted part by one element. This process is 
+    repeated until all elements are sorted.
+
 
     Algorithm:- 
     step 1:- start 
@@ -73,8 +104,7 @@ Q. What is selection sort?
       * Selection sort has a time complexity of O(n^2) in the worst and 
           average case.
       * Does not work well on large datasets.
-      * Does not preserve the relative order of items with equal keys 
-          which means it is not stable.
+      * it is not a stable sorting algoritham.
 
 ===============================================================================
 Q. what is Insertion Sort?
@@ -83,7 +113,7 @@ Q. what is Insertion Sort?
     sorted portion of the list.
 
     complaxity :
-          time  : O(n*n)
+          time  : O(n^2)
           space : O(1)
     
   # Advantages:
@@ -97,7 +127,6 @@ Q. what is Insertion Sort?
     * Not as efficient as other sorting algorithms 
         (e.g., merge sort, quick sort) for most cases.
   
-
     * work from left to right.
     * examine each item and compare it to items on its left.
     * Insert the item in the correct position in the array.
@@ -107,7 +136,7 @@ Q. what is Insertion Sort?
 Q. what is quick sort ?
     Quick sort is a fast and efficient sorting algorithm that works by dividing
     and solving. The quick sort algoritham seperate items from the list into 
-    two parts and then sort each part recursively. It uses divided and conquare
+    two parts and then sort each part recursively. It uses divid and conquare
     methed.
 
     what is the complaxity of quick sort.
@@ -169,6 +198,15 @@ Q. what is quick sort ?
         * Local Variables
         * Register Savings
 
+  Q. What is call Stack?
+        The call stack is a fundamental part of how a computer program keeps 
+        track of function calls. It operates on the principle of Last In, First
+        Out (LIFO). When a function is called, its information is pushed onto 
+        the call stack. When the function completes, this information is popped
+        off the stack, and the program continues executing from where it 
+        left off.
+
+
 ================================ QUEUE ======================================= 
   Q. what is Queue in data structure?
       A Queue Data Structure is a fundamental concept in computer science used
@@ -217,9 +255,58 @@ Q. what is quick sort ?
       
   ===========================================================================
   Q. what is hash-map?
-      Hash maps are a common data structure used to store key-value pairs for 
-      efficient retrieval. A value stored in a hash map is retrieved using the 
-      key under which it was stored.
+      A hash map is a data structure that stores data in key-value pairs, 
+      making it easy to find a value if we know its key. When storing a 
+      value in a hash map, we assign it a unique key. To retrieve the value 
+      later, we can simply use the key. This allows for very fast data 
+      retrieval. 
+
+  Q. What is Hashing?
+      Hashing is a technique used to store and quickly retrieve data. It 
+      involves using a special function, called a hash function, to convert 
+      data into a unique index. This index is used to place the data into a 
+      fixed-size array called a hash table. This process makes searching for 
+      data very efficient.
+
+  Q. what is Hash Table?
+      A hash table is also known as a hash map. It is a data structure that 
+      stores key-value pairs. It uses a hash function to map keys to a 
+      fixed-size array, called a hash table. This allows in faster search, 
+      insertion, and deletion operations.
+  
+  Q. what is Hash Function?
+      The hash function is a function that takes a key and returns an index 
+      into the hash table. The goal of a hash function is to distribute keys 
+      evenly across the hash table, minimizing collisions.
+  
+  Q. what is Hash Collision?
+      A hash collision occurs when two different keys map to the same index 
+      in a hash table. This can happen even with a good hash function, 
+      especially if the hash table is full or the keys are similar.
+    
+    Causes of Hash Collisions:-
+  
+      Poor Hash Function: A hash function that does not distribute keys evenly
+                          across the hash table can lead to more collisions.
+      
+      High Load Factor: A high load factor (ratio of keys to hash table size) 
+                        increases the probability of collisions.
+      
+      Similar Keys: Keys that are similar in value or structure are more likely
+                    to collide.
+  
+    Collision Resolution Techniques:-
+      There are two types of collision resolution techniques:
+
+     Open Addressing:
+       Linear Probing: Search for an empty slot sequentially.
+       Quadratic Probing: Search for an empty slot using a quadratic function.
+     Closed Addressing:
+       Chaining: Store colliding keys in a linked list or binary search tree at 
+              each index.
+       Cuckoo Hashing: Use multiple hash functions to distribute keys.
+      
+
   
 
 
